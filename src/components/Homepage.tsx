@@ -15,7 +15,7 @@ export default function Homepage() {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/subtitles?link=${encodeURIComponent(
+        `${import.meta.env.BASE_URL}/api/subtitles?link=${encodeURIComponent(
           youtubeUrl
         )}`
       );
