@@ -15,7 +15,7 @@ export default function Homepage() {
 
     try {
       const res = await fetch(
-        `${import.meta.env.BASE_URL}/api/subtitles?link=${encodeURIComponent(
+        `${import.meta.env.VITE_BASE_URL}/api/subtitles?link=${encodeURIComponent(
           youtubeUrl
         )}`
       );
